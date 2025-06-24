@@ -5705,6 +5705,7 @@ object {
 }
 .projects-grid .projects-box .projects-thumbnail .overlay {
   visibility: hidden;
+  
 }
 .projects-grid .projects-box img {
   width: 100%;
@@ -5772,6 +5773,7 @@ object {
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
+  
 }
 .projects-grid.style-3 .projects-thumbnail .overlay i {
   position: absolute;
@@ -5853,6 +5855,8 @@ object {
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
+  position: absolute;
+  right: 0;
 }
 .projects-grid.style-4 .projects-thumbnail .overlay i {
   position: absolute;
@@ -7259,7 +7263,7 @@ section {
     background-image: url(https://via.placeholder.com/1920x500.png);
 }
 .pheader-about {
-    background-image: url(https://via.placeholder.com/1920x500.png);
+    background-image: url('./images/pheader-aboutus.jpg');
 }
 .pheader-process {
     background-image: url(https://via.placeholder.com/1920x500.png);
@@ -8098,6 +8102,7 @@ ul.style-default li:last-child, ol.style-default li:last-child {
     margin-top: calc(-30px/2);
 }
 .projects-grid.style-4 .projects-thumbnail .overlay {
+  
     cursor: pointer;
 }
 .projects-grid.img-popup .projects-thumbnail .overlay {
