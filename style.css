@@ -4210,15 +4210,31 @@ object {
 /*--------------------------------------------------------------
 ## Testimonials
 --------------------------------------------------------------*/
+.testimonial-inner{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+}
 .ot-testimonials .testi-item {
   background: transparent;
   padding-right: 20px;
   margin-top: 26px;
+  width: 48%;
 }
 .ot-testimonials .testi-item .t-head {
   overflow: hidden;
   justify-content: normal;
-  padding-left: 20px;
+  /* padding-left: 20px; */
+  direction: rtl;
+  column-gap: 2rem;
+ 
+}
+.ot-testimonials .testi-item .t-head .tinfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .ot-testimonials .testi-item .t-head img {
   max-width: 80px;
@@ -4236,6 +4252,7 @@ object {
   text-transform: uppercase;
   font-weight: 500;
   color: #6f6f6f;
+
 }
 .ot-testimonials .testi-item .ttext {
   position: relative;
@@ -4245,6 +4262,7 @@ object {
   line-height: 36px;
   background: #fff;
   border: 1px solid #e0e0e0;
+  
 }
 .ot-testimonials .testi-item .ttext > span {
   position: absolute;
@@ -4263,7 +4281,7 @@ object {
   width: 80px;
   height: 45px;
   z-index: 1;
-  background: url("https://via.placeholder.com/189x150.png") no-repeat center;
+  background: url('./images/quote.svg') no-repeat center;
 }
 .ot-testimonials .ot-testimonials-slider-s2 .testi-item {
   padding-right: 0;
@@ -5647,7 +5665,7 @@ object {
   background: transparent;
   z-index: 0;
 }
-.projects-grid .projects-box .portfolio-info .portfolio-info-inner {
+.projects-grid .projects-box .portfolio-info  {
   text-align: center;
   width: 100%;
   z-index: 1;
@@ -5656,9 +5674,10 @@ object {
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
+  
 }
 .projects-grid .projects-box .portfolio-info h5 {
-  color: #fff;
+  color: #ffffff;
   font-size: 24px;
   padding: 0 25px;
   margin-bottom: 17px;
@@ -5709,7 +5728,7 @@ object {
 }
 .projects-grid .projects-box img {
   width: 100%;
-  height: auto;
+  height:20rem;
   display: block;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
@@ -5726,7 +5745,7 @@ object {
   height: auto;
 }
 .projects-grid.style-2 .portfolio-info .portfolio-info-inner {
-  text-align: left;
+  text-align: right;
   background: #fff;
   padding: 27px 50px 26px;
   -webkit-transform: translateY(40%);
@@ -7278,7 +7297,7 @@ section {
     background-image: url(https://via.placeholder.com/1920x500.png);
 }
 .pheader-portfolio {
-    background-image: url(https://via.placeholder.com/1920x500.png);
+    background-image: url('./images/pheader-portfolio.jpg');
 }
 .pheader-portfolio-detail {
     background-image: url(https://via.placeholder.com/1920x500.png);
