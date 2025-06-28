@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="utf-8">
@@ -19,11 +19,108 @@
 
     <link rel="stylesheet" href="style.css" />
 </head>
+<style>
+    .contact-page {
+  position: relative;
+  display: block;
+  padding: 120px 0 120px;
+}
 
+.contact-page .container {
+  max-width: 770px;
+}
+
+.contact-page__inner {
+  position: relative;
+  display: block;
+}
+
+.contact-page__form .row {
+  --bs-gutter-x: 20px;
+}
+
+.contact-page__input-box {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  background-color: #f6f4f1;
+}
+
+.contact-page__input-box input[type="text"],
+.contact-page__input-box input[type="email"] {
+  height: 52px;
+  width: 100%;
+  border: none;
+  background-color: #f6f4f1;
+  padding-right: 30px;
+  padding-left: 30px;
+  outline: none;
+  font-size: 14px;
+  color: #827e78;
+  display: block;
+  font-weight: 500;
+}
+
+.contact-page__input-box textarea {
+  font-size: 14px;
+  color: #827e78;
+  height: 152px;
+  width: 100%;
+  background-color: #f6f4f1;
+  padding: 20px 30px 30px;
+  border: none;
+  outline: none;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+
+.contact-page__btn {
+  border: none;
+  background-color: #cd8c66;
+  display: block;
+  margin: 0 auto;
+}
+
+.contact-page__btn::before {
+  background-color: #221c13;
+}
+
+.contact-page__input-box.text-message-box {
+  height: 152px;
+}
+.nice-select {
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+/* العنصر اللي بيعرض الخيار الحالي */
+.nice-select .current {
+  text-align: right !important;
+  display: block;
+}
+
+/* القائمة المنسدلة نفسها */
+.nice-select .list {
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+/* كل خيار داخل القائمة */
+.nice-select .option {
+  direction: rtl !important;
+  text-align: right !important;
+}
+.nice-select::after {
+  right: auto !important;
+  left: 10px !important; /* ضع السهم يسار العنصر */
+  transform: rotate(-45deg) !important; /* يعكس اتجاه السهم */
+  border-color: #555 transparent transparent #555 !important; /* شكل السهم */
+}
+</style>
 <body>
     <div id="royal_preloader"></div>
     <div id="page" class="site">
-        <header id="site-header" class="site-header header-transparent">
+        <header id="site-header" class="site-header header-transparent" style="background-color: #446784;">
             <!-- Main Header start -->
             <div class="octf-main-header is-fixed">
                 <div class="octf-area-wrap">
@@ -33,17 +130,17 @@
                                 <div class="octf-col logo-col no-padding">
                                     <div id="site-logo" class="site-logo">
                                         <a href="index.html">
-                                            <img src="images/logo.svg" alt="Theratio" class="">
+                                            <img src="images/شش.svg" alt="Theratio" class="">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="octf-col menu-col no-padding">
                                     <nav id="site-navigation" class="main-navigation">
                                         <ul class="menu">
-                                            <li class="menu-item-has-children">
-                                                <a href="index.html">Home</a>
+                                            <li class="menu-item-has-children current-menu-item current-menu-ancestor">
+                                                <a href="index.html">الرئيسية </a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="index.html">Main Home</a></li>
+                                                    <li class="current-menu-item"><a href="index.html">Main Home</a></li>
                                                     <li><a href="index-dark.html">Main Dark</a></li>
                                                     <li><a href="index-2.html">Interior Design</a></li>
                                                     <li><a href="index-2-light.html">Interior Design Light</a></li>
@@ -62,7 +159,7 @@
                                                     <li><a href="index-sidenav-light.html">Home with Side Menu Light</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="menu-item-has-children current-menu-item current-menu-ancestor"><a href="#">Pages</a>
+                                            <li class="menu-item-has-children"><a href="#">من نحن</a>
                                                 <ul class="sub-menu">
                                                     <li><a href="about-us.html">About Us</a></li>
                                                     <li><a href="our-services.html">Our Services</a></li>
@@ -70,10 +167,10 @@
                                                     <li><a href="single-team.html">Single Team</a></li>
                                                     <li><a href="our-process.html">Our Process</a></li>
                                                     <li><a href="our-studio.html">Our Stufio</a></li>
-                                                    <li class="menu-item-has-children current-menu-item"><a href="shop.html">Shop</a>
+                                                    <li class="menu-item-has-children"><a href="shop.html">Shop</a>
                                                         <ul class="sub-menu">
                                                             <li><a href="single-product.html">Single Product</a></li>
-                                                            <li class="current-menu-item"><a href="checkout-page.html">Checkout Page</a></li>
+                                                            <li><a href="checkout-page.html">Checkout Page</a></li>
                                                             <li><a href="cart-page.html">Cart Page</a></li>
                                                         </ul>
                                                     </li>
@@ -84,17 +181,17 @@
                                                     <li><a href="404-error.html">404 Error</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="menu-item-has-children"><a href="#">Services</a>
+                                            <li class="menu-item-has-children"><a href="#">المشاريع</a>
                                                 <ul class="sub-menu">
                                                     <li><a href="servcies-detail-1.html">Design & Planning</a></li>
                                                     <li><a href="servcies-detail-2.html">Exterior Design</a></li>
                                                     <li><a href="servcies-detail-3.html">Custom Solutions</a></li>
                                                     <li><a href="servcies-detail-4.html">Furniture & Decor</a></li>
                                                     <li><a href="servcies-detail-5.html">Creating Concept</a></li>
-                                                    <li><a href="servcies-detail-6.html">Author’s Control</a></li>
+                                                    <li><a href="servcies-detail-6.html">Author's Control</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="menu-item-has-children mega-dropdown"><a href="#">Portfolio</a>
+                                            <li class="menu-item-has-children mega-dropdown"><a href="#">التطوير العقاري </a>
                                                 <ul class="mega-sub-menu">
                                                     <li class="row">
                                                         <ul class="col">
@@ -136,14 +233,14 @@
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li class="menu-item-has-children"><a href="blog.html">Blog</a>
+                                            <li class="menu-item-has-children"><a href="blog.html">تواصل معنا</a>
                                                 <ul class="sub-menu">
                                                     <li><a href="blog.html">Blog Listing</a></li>
                                                     <li><a href="blog-grid.html">Blog Grid</a></li>
                                                     <li><a href="post.html">Blog Single</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="contact.html">Contacts</a></li>
+                                            <!-- <li><a href="contact.html">Contacts</a></li> -->
                                         </ul>
                                     </nav>
                                 </div>
@@ -151,7 +248,7 @@
                                 <!-- Call To Action -->
                                     <div class="octf-btn-cta">
 
-                                        <div class="octf-cart octf-cta-header">
+                                        <!-- <div class="octf-cart octf-cta-header">
                                             <a class="cart-contents" href="cart-page.html" title="View your shopping cart">
                                                 <i class="ot-flaticon-shopping-bag"></i>
                                                 <span class="count">2</span>
@@ -183,14 +280,14 @@
                                                     </div>
                                                 </div>
                                             </div>  
-                                        </div>
+                                        </div> -->
 
                                         <div class="octf-search octf-cta-header">
                                             <div class="toggle_search octf-cta-icons">
                                                 <i class="ot-flaticon-search"></i>
                                             </div>
                                             <!-- Form Search on Header -->
-                                            <div class="h-search-form-field collapse">
+                                            <!-- <div class="h-search-form-field collapse">
                                                 <div class="h-search-form-inner">
                                                     <form role="search" method="get" class="search-form">
                                                         <input type="search" class="search-field" placeholder="SEARCH..." value="" name="s">
@@ -198,7 +295,7 @@
                                                     </form>
                                                 </div>                                  
                                             </div>
-                                        </div>
+                                        </div> -->
 
                                         <div class="octf-sidepanel octf-cta-header">
                                             <div class="site-overlay panel-overlay"></div>
@@ -251,10 +348,10 @@
                                         <a class="mmenu-close" href="#"><i class="ot-flaticon-right-arrow"></i></a>
                                         <div class="mobile-nav">
                                             <ul id="menu-main-menu" class="mobile_mainmenu none-style">
-                                                <li class="menu-item-has-children">
+                                                <li class="menu-item-has-children current-menu-item current-menu-ancestor">
                                                     <a href="index.html">Home</a>
                                                     <ul class="sub-menu">
-                                                        <li><a href="index.html">Main Home</a></li>
+                                                        <li class="current-menu-item"><a href="index.html">Main Home</a></li>
                                                         <li><a href="index-dark.html">Main Dark</a></li>
                                                         <li><a href="index-2.html">Interior Design</a></li>
                                                         <li><a href="index-2-light.html">Interior Design Light</a></li>
@@ -273,7 +370,7 @@
                                                         <li><a href="index-sidenav-light.html">Home with Side Menu Light</a></li>
                                                     </ul>
                                                 </li>
-                                                <li class="menu-item-has-children current-menu-item current-menu-ancestor"><a href="#">Pages</a>
+                                                <li class="menu-item-has-children"><a href="#">Pages</a>
                                                     <ul class="sub-menu">
                                                         <li><a href="about-us.html">About Us</a></li>
                                                         <li><a href="our-services.html">Our Services</a></li>
@@ -281,10 +378,10 @@
                                                         <li><a href="single-team.html">Single Team</a></li>
                                                         <li><a href="our-process.html">Our Process</a></li>
                                                         <li><a href="our-studio.html">Our Studio</a></li>
-                                                        <li class="menu-item-has-children current-menu-item"><a href="shop.html">Shop</a>
+                                                        <li class="menu-item-has-children"><a href="shop.html">Shop</a>
                                                             <ul class="sub-menu">
                                                                 <li><a href="single-product.html">Single Product</a></li>
-                                                                <li class="current-menu-item"><a href="checkout-page.html">Checkout Page</a></li>
+                                                                <li><a href="checkout-page.html">Checkout Page</a></li>
                                                                 <li><a href="cart-page.html">Cart Page</a></li>
                                                             </ul>
                                                         </li>
@@ -302,7 +399,7 @@
                                                         <li><a href="servcies-detail-3.html">Custom Solutions</a></li>
                                                         <li><a href="servcies-detail-4.html">Furniture & Decor</a></li>
                                                         <li><a href="servcies-detail-5.html">Creating Concept</a></li>
-                                                        <li><a href="servcies-detail-6.html">Author’s Control</a></li>
+                                                        <li><a href="servcies-detail-6.html">Author's Control</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class="menu-item-has-children"><a href="#">Portfolio</a>
@@ -356,7 +453,7 @@
                                                         <li><a href="post.html">Blog Single</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="contact.html">Contacts</a></li>
+                                                <!-- <li><a href="contact.html">Contacts</a></li> -->
                                             </ul>
                                         </div>
                                     </div>
@@ -461,17 +558,17 @@
             <div class="page-header dtable text-center header-transparent pheader-faq">
                 <div class="dcell">
                     <div class="container">
-                        <h1 class="page-title">Checkout</h1>
-                        <ul id="breadcrumbs" class="breadcrumbs none-style">
+                        <h1 class="page-title">التطوير و التنفيذ</h1>
+                        <!-- <ul id="breadcrumbs" class="breadcrumbs none-style">
                             <li><a href="index.html">Home</a></li>
                             <li class="active">Checkout</li>
-                        </ul>    
+                        </ul>     -->
                     </div>
                 </div>
             </div>
         </div>
 
-        <section class="shop-cart">
+        <!-- <section class="shop-cart">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -597,8 +694,120 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
+ <section class="contact-page">
+            <div class="container">
+                <div class="section-title text-center" style="margin-bottom: 2rem;">
+                    <h2 class="section-title__title">التطوير و التنفيذ</h2>
+                    <span class="section-title__tagline mt-5" style="color: #b6b2b2;font-size: 1.3rem;">معلومات العقار</span>
+                </div>
+                <div class="contact-page__inner">
+                    <!-- <form action="assets/inc/sendemail.php" class="contact-page__form contact-form-validated" -->
+                        <!-- novalidate="novalidate"> -->
+							<div class="row" style="direction: rtl; font-family: 'Tajawal', sans-serif;">
 
+							<!-- المدينة -->
+							<div class="col-xl-6" style="margin-bottom: 15px;display: flex;flex-direction: column;align-items: flex-start;">
+							  <label style="font-weight: bold; display: block; margin-bottom: 5px;">المدينة</label>
+							  <select dir="rtl" class=" contact-page__input-box wide" style="width: 100%; text-align: right; text-align-last: right;padding: 1rem;">
+								<option>الرياض</option>
+								<option>جدة</option>
+								<option>الدمام</option>
+							  </select>
+							</div>
+						  
+							<!-- المنطقة -->
+							<div class="col-xl-6" style="margin-bottom: 15px;display: flex;flex-direction: column;align-items: flex-start;">
+							  <label style="font-weight: bold; display: block; margin-bottom: 5px;">المنطقة</label>
+							  <select dir="rtl" class=" contact-page__input-box wide" style="width: 100%; text-align: right; text-align-last: right;padding: 1rem;">
+								<option>حي المملكة</option>
+								<option>حي العليا</option>
+								<option>حي النرجس</option>
+							  </select>
+							</div>
+						  
+							<!-- مساحة الأرض -->
+							<div class="col-xl-6" style="margin-bottom: 15px;display: flex;flex-direction: column;align-items: flex-start;">
+							  <label style="font-weight: bold; display: block; margin-bottom: 5px;">مساحة الأرض</label>
+							  <div style="position: relative;width: 100%;">
+								<!-- <img src="./assets/images/backgrounds/lucide_land-plot.svg" alt="" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: #c68c53;"/> -->
+								<input type="text" value="30000" placeholder="أدخل المساحة" class=" contact-page__input-box wide" style="width: 100%; border-radius: 5px;background-color:#f6f4f1;
+									padding:1rem 20px;">
+								<!-- <input type="text" placeholder="(123) 456 - 7890" name="phone" style="padding-left: 35px; width: 100%;"> -->
+ 
+							</div>
+							</div>
+						  
+							<!-- نوع الأرض -->
+							<div class="col-xl-6" style="margin-bottom: 15px;display: flex;flex-direction: column;align-items: flex-start;">
+							  <label style="font-weight: bold; display: block; margin-bottom: 5px;">نوع الأرض</label>
+							  <select dir="rtl" class=" contact-page__input-box wide" style="width: 100%; text-align: right; text-align-last: right;padding: 1rem;">
+								<option>اختر</option>
+								<option>سكنية</option>
+								<option>تجارية</option>
+							  </select>
+							</div>
+						  
+							<!-- استخدامات الأرض -->
+							<div class="col-xl-6" style="margin-bottom: 15px;display: flex;flex-direction: column;align-items: flex-start;">
+							  <label style="font-weight: bold; display: block; margin-bottom: 5px;">استخدامات الأرض</label>
+							  <select dir="rtl" class=" contact-page__input-box wide" style="width: 100%; text-align: right; text-align-last: right;padding: 1rem;">
+								<option>اختر</option>
+								<option>بناء عمارة</option>
+								<option>مزرعة</option>
+							  </select>
+							</div>
+						  
+							<!-- إضافة مرفق -->
+							<!-- إضافة مرفق -->
+								<div class="col-xl-6" style="margin-bottom: 15px; direction: rtl;display: flex;flex-direction: column;align-items: flex-start;">
+									<label style="font-weight: bold; display: block; margin-bottom: 5px;">اضافة مرفق</label>
+								
+									<label for="uploadFile" class="contact-page__input-box" style="
+									display: flex;
+                                    width: 100%;
+									align-items: center;
+									justify-content: space-between;
+									background-color:#f6f4f1;
+									padding:1rem 20px;
+									cursor: pointer;
+									transition: 0.3s ease;
+									">
+									<span style="color: #888888;">اسحب او اضغط لعرض ملف</span>
+									<i class="fas fa-upload" style="color: #446784; font-size: 20px;"></i>
+									<input type="file" id="uploadFile" name="attachment" style="display: none;">
+									</label>
+								</div>
+  
+						  
+							<!-- زر الخطوة التالية -->
+							<div class="col-12" style="text-align: left; margin-top: 20px;">
+								<a href="./management4.html">
+
+									<button style="background-color: #002c5f; color: white; padding: 10px 30px; border: none; border-radius: 5px; font-weight: bold;">
+										تسجيل 
+										<i class="fas fa-arrow-left" style="margin-right: 8px;"></i>
+									</button>
+								</a>
+							  </div>
+						  
+						  </div>
+						  
+                       <!-- <div class="row">
+							<div class="col-12" style="text-align: left; margin-top: 20px;">
+								<a href="./management3.html">
+
+									<button style="background-color: #002c5f; color: white; padding: 10px 30px; border: none; border-radius: 5px; font-weight: bold;">
+										الخطوة التالية
+										<i class="fas fa-arrow-left" style="margin-right: 8px;"></i>
+									</button>
+								</a>
+							  </div>
+                        </div> -->
+                    <!-- </form> -->
+                </div>
+            </div>
+        </section>
 
     <footer id="site-footer" class="site-footer">
         <div class="container">

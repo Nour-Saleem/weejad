@@ -7294,7 +7294,7 @@ section {
     background-image: url(https://via.placeholder.com/1920x500.png);
 }
 .pheader-faq {
-    background-image: url(https://via.placeholder.com/1920x500.png);
+    background-image: url('./images/pheader-faq.jpg');
 }
 .pheader-portfolio {
     background-image: url('./images/pheader-portfolio.jpg');
@@ -9532,6 +9532,9 @@ ul.style-default li:last-child, ol.style-default li:last-child {
   }
   .our-portfolio {
       padding-top: 80px;
+      background-image: url('./images/GBA\ CAM2\ NIGHT.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
   }
   .our-portfolio-slide {
       padding-top: 80px;
