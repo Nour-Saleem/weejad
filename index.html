@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>Theratio</title>
+    <title>wejaad</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -26,6 +26,8 @@
 <link href="https://fonts.cdnfonts.com/css/thesansb" rel="stylesheet">
 
 <style>
+
+
   @font-face {
       font-family: 'TheSansArabic';
       src: url('fonts/TheSansArabicLight.ttf') format('truetype');
@@ -44,7 +46,7 @@
     header {
       text-align: center;
       margin-bottom: 2rem;
-      background-color: #446784;
+      /* background-color: #446784; */
     }
 
     h1 {
@@ -66,8 +68,43 @@ body, nav a, .navbar a, ul li a {
   font-family: 'TheSansArabic', sans-serif !important;
   font-weight: 400;
 }
+p{
+  font-family: 'TheSansArabic', sans-serif !important;
 
+}
+h5{
+  font-family: 'TheSansArabic', sans-serif !important;
+    
+}
+a{
+  font-family: 'TheSansArabic', sans-serif !important;
 
+}
+.img-item {
+  position: relative;
+  width: fit-content;
+  height: auto;
+}
+
+.img-item img {
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.img-item .color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.img-item:hover .color {
+  opacity: 1;
+}
+
+.img-item:hover .gray {
+  opacity: 0;
+}
 
   </style>
 </head>
@@ -190,6 +227,13 @@ body, nav a, .navbar a, ul li a {
                                                 </ul>
                                             </li>
                                             <li class="menu-item-has-children"><a href="blog.html">تواصل معنا</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="blog.html">Blog Listing</a></li>
+                                                    <li><a href="blog-grid.html">Blog Grid</a></li>
+                                                    <li><a href="post.html">Blog Single</a></li>
+                                                </ul>
+                                            </li>
+                                                <li class="menu-item-has-children"><a href="blog.html">المدونة</a>
                                                 <ul class="sub-menu">
                                                     <li><a href="blog.html">Blog Listing</a></li>
                                                     <li><a href="blog-grid.html">Blog Grid</a></li>
@@ -525,9 +569,38 @@ body, nav a, .navbar a, ul li a {
                         <ul style="position: absolute;left: 0;">
                         
                             <!-- SLIDE 1 -->
-                            <li data-index="rs-70" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="images/slider2-home1-1.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="" data-param1="1" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                            <li data-index="rs-70" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="images/WhatsApp Image 2025-04-20 at 17.29.55 (2).jpeg"  data-rotate="0"  data-saveperformance="off"  data-title="" data-param1="1" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
-                                <img src="images/slider2-home1-1.jpg" data-bgcolor='rgba(255,255,255,0)' style='' alt=""  data-bgposition="center center" data-bgfit="cover" class="rev-slidebg" data-bgrepeat="no-repeat" data-bgparallax="off" data-no-retina>
+                                 <div style="position: relative; display: inline-block;">
+  <img src="./images/GBA CAM2 NIGHT.jpg"
+       style="display: block; width: 100%; height: auto;"
+       alt=""
+       data-bgposition="center center"
+       data-bgfit="cover"
+       data-bgrepeat="no-repeat"
+       class="rev-slidebg"
+       data-bgparallax="off"
+       data-no-retina>
+       
+  <!-- طبقة تغميق سوداء -->
+  <div style="position: absolute;
+              top: 0; left: 0;
+              width: 100%; height: 100%;
+              background-color: rgba(0, 0, 0, 0.1); /* درجة تغميق 10% */
+              z-index: 1;"></div>
+
+  <!-- الكلام اللي فوق الصورة -->
+  <div style="position: absolute;
+              top: 50%; left: 50%;
+              transform: translate(-50%, -50%);
+              color: white;
+              z-index: 2;
+              font-size: 20px;">
+    <!-- الكلام هنا -->
+  </div>
+</div>
+
+                                <!-- <img src="images/GBA CAM2 NIGHT.jpg" data-bgcolor='rgba(255,255,255,0)' style='' alt=""  data-bgposition="center center" data-bgfit="cover" class="rev-slidebg" data-bgrepeat="no-repeat" data-bgparallax="off" data-no-retina> -->
                                 
                                 <!-- LAYER 1  right image overlay dark-->
 
@@ -552,7 +625,7 @@ body, nav a, .navbar a, ul li a {
                                 </div>
                                        
                                 <!-- LAYER 4  Bold Title-->
-                                <div class="tp-caption tp-resizeme tp-caption-main" 
+                                <div dir="rtl" class="tp-caption tp-resizeme tp-caption-main" 
                                     id="slide-70-layer-2" 
                                     data-x="['center','center','center','center']" data-hoffset="['2','0','0','0']" 
                                     data-y="['center','center','center','center']" data-voffset="['-56','-63','-60','-65']"
@@ -569,30 +642,49 @@ body, nav a, .navbar a, ul li a {
 
                                     data-textAlign="['left','left','left','left']"
                 
-                                    >New Level of Interior 
+                                    >
+                                    <!-- New Level of Interior  -->
                                 </div>
                                                                     
                                 <!-- LAYER 5  Paragraph-->
-                                <div class="tp-caption tp-resizeme tp-desc" 
-                                    id="slide-70-layer-3" 
-                                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                                    data-y="['center','center','center','center']" data-voffset="['54','43','31','15']" 
-                                    data-fontsize="['19','18','17','16']"
-                                    data-lineheight="['33','27','28','24']"
-                                    data-width="['818','630','500','417']"
-                                    data-weight="['500','500','500','500']"
-                                    data-color="['#fff','#fff','#fff','#fff']"
-                                    data-whitespace="normal"
-                         
-                                    data-type="text" 
-                                    data-responsive_offset="on" 
-                
-                                    data-frames='[{"delay":1200,"speed":1000,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1000,"frame":"999","to":"x:50px;opacity:0;","ease":"power3.inOut"}]'
-                                    
-                                    data-textAlign="['center','center','center','center']"
-                
-                                    >We pride ourselves on being builders — creating architectural and creative solutions to help people realize their vision and make them a reality. Wanna work with us?
-                                    </div> 
+                          <!-- <div class="tp-caption tp-resizeme tp-desc"
+     id="slide-70-layer-3"
+     data-x="center" data-hoffset="0"
+     data-y="center" data-voffset="0"
+     data-fontsize="['19','18','17','16']"
+     data-lineheight="['33','27','28','24']"
+     data-width="['818','630','500','417']"
+     data-weight="['500','500','500','500']"
+     data-color="['#fff','#fff','#fff','#fff']"
+     data-whitespace="normal"
+
+     data-type="text"
+     data-responsive_offset="on"
+
+     data-frames='[
+        {
+          "delay":1200,
+          "speed":1000,
+          "frame":"0",
+          "from":"x:50px;opacity:0;",
+          "to":"o:1;",
+          "ease":"power3.inOut"
+        },
+        {
+          "delay":"wait",
+          "speed":1000,
+          "frame":"999",
+          "to":"x:50px;opacity:0;",
+          "ease":"power3.inOut"
+        }
+     ]'
+
+     data-textAlign="center"
+     style="text-align: center;">
+
+     We pride ourselves on being builders — creating architectural and creative solutions to help people realize their vision and make them a reality. Wanna work with us?
+</div> -->
+
         
                                 <!-- LAYER 6  Read More-->
                                 <div class="tp-caption rev-btn" 
@@ -614,7 +706,9 @@ body, nav a, .navbar a, ul li a {
                                     data-paddingbottom="[0,0,0,0]"
                                     data-paddingleft="[0,0,0,0]"
                 
-                                    ><a href="portfolio-masonry.html" class="octf-btn octf-btn-primary btn-slider btn-large">View Projects</a>
+                                    >
+                                    <h1 style="color: #fff; padding-bottom:40px;">tessssst</h1>
+                                    <a href="portfolio-masonry.html" class="octf-btn octf-btn-primary btn-slider btn-large">View Projects</a>
                                 </div>  
                        
                             </li>  
@@ -623,33 +717,82 @@ body, nav a, .navbar a, ul li a {
                             <!-- SLIDE 1 -->
                             <li data-index="rs-71" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="images/slider2-home1-1.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="" data-param1="1" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
-                                <img src="./images/slider2-home1-1.jpg" data-bgcolor='#ffffff' style='' alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="off" data-no-retina>
-                                  
+             <div style="position: relative; display: inline-block;">
+  <img src="./images/cam3 night.jpg"
+       style="display: block; width: 100%; height: auto;"
+       alt=""
+       data-bgposition="center center"
+       data-bgfit="cover"
+       data-bgrepeat="no-repeat"
+       class="rev-slidebg"
+       data-bgparallax="off"
+       data-no-retina>
+       
+  <!-- طبقة تغميق سوداء -->
+  <div style="position: absolute;
+              top: 0; left: 0;
+              width: 100%; height: 100%;
+              background-color: rgba(0, 0, 0, 0.1); /* درجة تغميق 10% */
+              z-index: 1;"></div>
+
+  <!-- الكلام اللي فوق الصورة -->
+  <div style="position: absolute;
+              top: 50%; left: 50%;
+              transform: translate(-50%, -50%);
+              color: white;
+              z-index: 2;
+              font-size: 20px;">
+   </div>
+</div>
+
+                                  <div>
+                                    <h1>test</h1>
+                                  </div>
                                                             
                                 <!-- LAYER 3  Thin text title-->
-                                <div class="tp-caption tp-resizeme tp-caption-big" 
-                                    id="slide-71-layer-1" 
-                                    data-x="['center','center','center','center']" data-hoffset="['56','46','34','0']" 
-                                    data-y="['center','center','center','center']" data-voffset="['-64','-72','-65','-50']" 
-                                    data-fontsize="['206',150','0','0']"
-                                    data-lineheight="['206','170','127','80']"
-                                    data-letterspacing="['104','85','63','39']"
-                                    data-fontweight="['900','900','900','900']"
-                                    data-color="['transparent','transparent','transparent','transparent']"
-                                    data-whitespace="nowrap"
-                         
-                                    data-type="text" 
-                                    data-responsive_offset="on" 
-                
-                                    data-frames='[{"delay":500,"split":"chars","splitdelay":0.1,"speed":500,"frame":"0","from":"x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"power4.inOut"},{"delay":"wait","speed":1000,"frame":"999","to":"x:50px;z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;","ease":"power3.inOut"}]'
+                               <!-- <div class="tp-caption tp-resizeme tp-caption-big" 
+     id="slide-71-layer-1" 
+     data-x="center" data-hoffset="0" 
+     data-y="center" data-voffset="0" 
+     data-fontsize="['206','150','100','80']"
+     data-lineheight="['206','170','127','80']"
+     data-letterspacing="['0','0','0','0']"
+     data-fontweight="['900','900','900','900']"
+     data-color="['#fff','#fff','#fff','#fff']"
+     data-whitespace="nowrap"
 
-                                    data-textAlign="['center','center','center','center']"
-                
-                                    >Quality
-                                </div>
+     data-type="text" 
+     data-responsive_offset="on" 
+
+     data-frames='[
+       {
+         "delay":500,
+         "split":"chars",
+         "splitdelay":0.1,
+         "speed":500,
+         "frame":"0",
+         "from":"x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;",
+         "mask":"x:0px;y:0px;s:inherit;e:inherit;",
+         "to":"o:1;",
+         "ease":"power4.inOut"
+       },
+       {
+         "delay":"wait",
+         "speed":1000,
+         "frame":"999",
+         "to":"x:50px;z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;",
+         "ease":"power3.inOut"
+       }
+     ]'
+
+     data-textAlign="center"
+     style="text-align: center;">
+    Quality
+</div> -->
+
                                        
                                 <!-- LAYER 4  Bold Title-->
-                                <div class="tp-caption tp-resizeme tp-caption-main" 
+                                <!-- <div class="tp-caption tp-resizeme tp-caption-main" 
                                     id="slide-71-layer-2" 
                                     data-x="['center','center','center','center']" data-hoffset="['2','0','0','0']" 
                                     data-y="['center','center','center','center']" data-voffset="['-56','-63','-60','-65']"
@@ -667,10 +810,10 @@ body, nav a, .navbar a, ul li a {
                                     data-textAlign="['left','left','left','left']"
                 
                                     >High-end Interior Design
-                                </div>
+                                </div> -->
                                                                     
                                 <!-- LAYER 5  Paragraph-->
-                                <div class="tp-caption tp-resizeme tp-desc" 
+                                <!-- <div class="tp-caption tp-resizeme tp-desc" 
                                     id="slide-71-layer-3" 
                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
                                     data-y="['center','center','center','center']" data-voffset="['54','43','31','15']" 
@@ -689,7 +832,7 @@ body, nav a, .navbar a, ul li a {
                                     data-textAlign="['center','center','center','center']"
                 
                                     >We pride ourselves on being builders — creating architectural and creative solutions to help people realize their vision and make them a reality. Wanna work with us?
-                                    </div> 
+                                    </div>  -->
         
                                 <!-- LAYER 6  Read More-->
                                 <div class="tp-caption rev-btn" 
@@ -718,11 +861,40 @@ body, nav a, .navbar a, ul li a {
                             <!-- SLIDE 1 -->
                             <li data-index="rs-72" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="images/slider2-home1-1.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="" data-param1="1" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
-                                <img src="./images/slider2-home1-1.jpg" data-bgcolor='#ffffff' style='' alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="off" data-no-retina>
+                                 <div style="position: relative; display: inline-block;">
+  <img src="./images/GARDENIA 3 NIGHT edit 0.jpg"
+       style="display: block; width: 100%; height: auto;"
+       alt=""
+       data-bgposition="center center"
+       data-bgfit="cover"
+       data-bgrepeat="no-repeat"
+       class="rev-slidebg"
+       data-bgparallax="off"
+       data-no-retina>
+       
+  <!-- طبقة تغميق سوداء -->
+  <div style="position: absolute;
+              top: 0; left: 0;
+              width: 100%; height: 100%;
+              background-color: rgba(0, 0, 0, 0.1); /* درجة تغميق 10% */
+              z-index: 1;"></div>
+
+  <!-- الكلام اللي فوق الصورة -->
+  <div style="position: absolute;
+              top: 50%; left: 50%;
+              transform: translate(-50%, -50%);
+              color: white;
+              z-index: 2;
+              font-size: 20px;">
+    <!-- الكلام هنا -->
+  </div>
+</div>
+
+                                <!-- <img src="./images/GARDENIA 3 NIGHT edit 0.jpg" data-bgcolor='#ffffff' style='' alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="off" data-no-retina> -->
                                 
                                                             
                                 <!-- LAYER 3  Thin text title-->
-                                <div class="tp-caption tp-resizeme tp-caption-big" 
+                                <!-- <div class="tp-caption tp-resizeme tp-caption-big" 
                                     id="slide-72-layer-1" 
                                     data-x="['center','center','center','center']" data-hoffset="['56','46','34','0']" 
                                     data-y="['center','center','center','center']" data-voffset="['-64','-72','-65','-50']" 
@@ -741,7 +913,7 @@ body, nav a, .navbar a, ul li a {
                                     data-textAlign="['center','center','center','center']"
                 
                                     >Studio
-                                </div>
+                                </div> -->
                                        
                                 <!-- LAYER 4  Bold Title-->
                                 <div class="tp-caption tp-resizeme tp-caption-main" 
@@ -765,7 +937,7 @@ body, nav a, .navbar a, ul li a {
                                 </div>
                                                                     
                                 <!-- LAYER 5  Paragraph-->
-                                <div class="tp-caption tp-resizeme tp-desc" 
+                                <!-- <div class="tp-caption tp-resizeme tp-desc" 
                                     id="slide-72-layer-3" 
                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
                                     data-y="['center','center','center','center']" data-voffset="['54','43','31','15']" 
@@ -784,7 +956,7 @@ body, nav a, .navbar a, ul li a {
                                     data-textAlign="['center','center','center','center']"
                 
                                     >We pride ourselves on being builders — creating architectural and creative solutions to help people realize their vision and make them a reality. Wanna work with us?
-                                    </div> 
+                                    </div>  -->
         
                                 <!-- LAYER 6  Read More-->
                                 <div class="tp-caption rev-btn" 
@@ -817,12 +989,12 @@ body, nav a, .navbar a, ul li a {
                     </div>
                 </div>
                 <div class="banner-desc-1">
-                    <ul>
+                    <!-- <ul>
                         <li><a href="#"><span>pinterest</span></a></li>
                         <li><a href="#"><span>twitter</span></a></li>
                         <li><a href="#"><span>facebook</span></a></li>
                         <li><a href="#"><span>instagram</span></a></li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
 
@@ -831,12 +1003,14 @@ body, nav a, .navbar a, ul li a {
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
                             <div class="story-text">
-                                <p>"نصوص تجريبية وأمثلة نصية باللغة العربية تُستخدم عادةً لأغراض التصميم والنشر"</p>
+                                <p style="font-family: 'TheSansArabic', sans-serif !important;">"في وجاد العقارية نؤمن بأن التطوير العقاري رسالة نهدف من خلالها لإحداث أثر حقيقي في حياة الناس، والمساهمة في بناء مدن سعودية عصرية تواكب رؤية المملكة وتلبي تطلعات المجتمع."</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12">
                             <div class="story-author flex" style="direction: ltr;">
-                                <img src="./images/image1-home1.png" class="" alt="">
+<img src="./images/saeed.jpg" 
+     style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover;" 
+     alt="">
                                 <div class="story-content">
                                     <h5 class="story-title">سعيد بن حسين القحطاني</h5>
                                     <p class="story-description" style="text-align: center;">الرئيس التنفيذي للشركة</p>
@@ -854,23 +1028,26 @@ body, nav a, .navbar a, ul li a {
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 col-md-12 mb-5 mb-lg-0">
-                            <div class="about-img-1">
-                                <img src="./images/image2-home1.png" alt="">
-                            </div>
-                        </div>
                         <div class="col-lg-6 col-md-12 align-self-center">
                             <div class="about-content-1 ml-xl-70">
                                 <div class="ot-heading is-dots">
-                                    <span>[ about company ]</span>
-                                    <h2 class="main-heading">From Sketch to Life</h2>
+                                    <p style="font-family: 'TheSansArabic', sans-serif !important; text-align: right; font-weight:400;">عن وجاد العقارية</p>
+                                    <h2 class="main-heading" style="font-family: 'TheSansArabic', sans-serif !important; text-align: right;">نُخطّط بعناية... ونُشيّد بثقة</h2>
                                 </div>
-                                <p>نصوص تجريبية وأمثلة نصية باللغة العربية تُستخدم عادةً لأغراض التصميم والنشر. هذا النص ليس له معنى، بل هو مجرد نص وصفي يتم استخدامه لملء المساحات في التصميم. يمكنك استخدام هذا النوع من النصوص عند الحاجة إلى نصوص طويلة دون الحاجة إلى التركيز على المعنى، وذلك لتقدير شكل التخطيط والألوان في المشروع الخاص بك.</p>
-                                <div class="ot-button">
-                                    <a href="portfolio-masonry.html" class="octf-btn octf-btn-dark">View Projects</a>
-                                </div>
+                                <p style="font-family: 'TheSansArabic', sans-serif !important; text-align: right;">في وجاد العقارية، نؤمن بأن التطوير العمراني ليس مجرد بناء مبانٍ، بل هو بناء لحياة متكاملة، تبدأ بفهم الإنسان وتنتهي بابتكار بيئة تعبّر عن هويته وتواكب طموحه.منذ انطلاقتنا، التزمنا بأن نكون جزءًا فاعلًا في مسيرة التحوّل العمراني التي تشهدها المملكة، عبر مشاريع تُثري جودة الحياة، وتترك أثرًا مستدامًا في قلب كل مدينة وكل مجتمع.</p>
+                                <!-- <p>نصوص تجريبية وأمثلة نصية باللغة العربية تُستخدم عادةً لأغراض التصميم والنشر. هذا النص ليس له معنى، بل هو مجرد نص وصفي يتم استخدامه لملء المساحات في التصميم. يمكنك استخدام هذا النوع من النصوص عند الحاجة إلى نصوص طويلة دون الحاجة إلى التركيز على المعنى، وذلك لتقد </p> -->
+                              <div class="ot-button" style="text-align: right;">
+    <a style="font-family: 'TheSansArabic', sans-serif !important; " href="portfolio-masonry.html" class="octf-btn octf-btn-dark">  معرفة المزيد</a>
+</div>
+
                             </div>
                         </div> 
+                        <div class="col-lg-6 col-md-12 mb-5 mb-lg-0">
+                            <div class="about-img-1">
+<img src="./images/Rectangle 4896.png" 
+     alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -882,75 +1059,34 @@ body, nav a, .navbar a, ul li a {
                                 <!-- <div class="img-item">
                                     <figure><img src="./images/وجاد.png" alt=""></figure>
                                 </div> -->
-                                <div class="img-item">
-                                    <figure><img src="./images/منصور قابضه.png" alt=""></figure>
-                                </div>
-                                <div class="img-item">
-                                    <figure><img src="./images/شركه اسكان.png" alt=""></figure>
-                                </div>
-                                <div class="img-item">
-                                    <figure><img src="./images/ذهب.png" alt=""></figure>
-                                </div>
-                                <!-- <div class="img-item">
-                                    <figure><img src="./images/وجاد رمادي.png" alt=""></figure>
-                                </div> -->
-                                <div class="img-item">
-                                    <figure><img src="./images/منصور قابضه رمادي.png" alt=""></figure>
-                                </div>
-                                <div class="img-item">
-                                    <figure><img src="./images/شركة الاسكان رمادي.png" alt=""></figure>
-                                </div>
-                                <div class="img-item">
-                                    <figure><img src="./images/ذهب رمادي.png" alt=""></figure>
-                                </div>
+                               <div class="img-item">
+  <figure>
+    <img class="gray" src="./images/منصور قابضه رمادي.png" alt="">
+    <img class="color" src="./images/منصور قابضه.png" alt="">
+  </figure>
+</div>
+
+<div class="img-item">
+  <figure>
+    <img class="gray" src="./images/شركة الاسكان رمادي.png" alt="">
+    <img class="color" src="./images/شركه اسكان.png" alt="">
+  </figure>
+</div>
+
+<div class="img-item">
+  <figure>
+    <img class="gray" src="./images/ذهب رمادي.png" alt="">
+    <img class="color" src="./images/ذهب.png" alt="">
+  </figure>
+</div>
+
                                
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div>
-                <div class="container-fluid">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-4 col-md-6 px-0">
-                            <div class="cate-lines h-light">
-                                <div class="cate-item">
-                                    <a href="#">                
-                                        <img src="./images/cate1.jpg" alt="">
-                                    </a>                
-                                    <div class="cate-item_content">
-                                        <a href="#"><h2>Office Spaces<span class="number-stroke">01</span></h2></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 px-0">
-                            <div class="cate-lines h-light">
-                                <div class="cate-item">
-                                    <a href="#">                
-                                        <img src="./images/cate2.jpg" alt="">
-                                    </a>                
-                                    <div class="cate-item_content">
-                                        <a href="#"><h2>Public Spaces<span class="number-stroke">02</span></h2></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 px-0">
-                            <div class="cate-lines s-dark">
-                                <div class="cate-item">
-                                    <a href="#">                
-                                        <img src="./images/cate3.jpg" alt="">
-                                    </a>                
-                                    <div class="cate-item_content">
-                                        <a href="#"><h2>Residential Spaces<span class="number-stroke">03</span></h2></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <section class="services-1">
                 <div class="grid-lines grid-lines-vertical">
                     <span class="g-line-vertical line-left color-line-default"></span>
@@ -960,14 +1096,14 @@ body, nav a, .navbar a, ul li a {
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center theratio-align-center">
-                            <div class="ot-heading is-dots">
+                            <!-- <div class="ot-heading is-dots">
                                 <span>[ خدماتنا ]</span>
                                 <h2 class="main-heading">ماذا يمكننا أن نقدم</h2>
-                            </div>
-                            <div class="space-50"></div>
+                            </div> -->
+                            <!-- <div class="space-50"></div> -->
                         </div>
                     </div>
-                    <div class="row justify-content-center">
+                    <!-- <div class="row justify-content-center">
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="icon-box icon-box--bg-img icon-box--icon-top icon-box--is-line-hover icon-bg-1 text-center">
                                 <div class="icon-main"><img src="./images/iconbox1.2.png" alt=""></div>
@@ -1005,46 +1141,114 @@ body, nav a, .navbar a, ul li a {
                             </div>
                         </div>
                         <div class="space-120"></div>
+                    </div> -->
+                       <section class="our-philosophy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 theratio-align-center text-center">
+                        <div class="ot-heading is-dots">
+                            <span>عن وجاد</span>
+                            <h2 style="font-family: 'TheSansArabic', sans-serif !important; " class="main-heading  ">رؤية تُلهمنا دائمًا </h2>
+                        </div>
                     </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-5 mb-xl-0">
+                        <div class="support-box">
+                            <div class="inner-box">
+                                <div class="overlay flex-middle">
+                                    <div class="inner">
+                                        <p>نقدّم نموذجًا متكاملًا في التطوير العقاري يجمع بين الابتكار والجودة، لنُنشئ مجتمعات عصرية تعكس الهوية السعودية وتلبي طموحات المستقبل.</p>
+                                    </div>
+                                </div>
+                                <div class="content-box">
+                                    <div class="icon-title">
+                                        <span class="ot-flaticon-brickwall"></span>
+                                        <h5>رسالتنا</h5>
+                                    </div>
+                                    <img src="./images/Rectangle 4897.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-5 mb-xl-0">
+                        <div class="support-box">
+                            <div class="inner-box">
+                                <div class="overlay flex-middle">
+                                    <div class="inner">
+                                        <p>أن نكون من الممكنين الرئيسيين لرؤية المملكة 2030 عبر مشاريع تُحدث فرقًا في جودة الحياة والبيئة والاقتصاد.</p>
+                                    </div>
+                                </div>
+                                <div class="content-box">
+                                    <div class="icon-title">
+                                         <span class="ot-flaticon-paint"></span>
+                                         <h5>رؤيتنا</h5>
+                                    </div>
+                                    <img src="./images/imgi_13_support2.png" class="" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <div class="support-box">
+                            <div class="inner-box">
+                                <div class="overlay flex-middle">
+                                    <div class="inner">
+                                        <p> نلتزم بالجودة، ونقود بالابتكار، ونبني بالثقة.</p>
+                                    </div>
+                                </div>
+                                <div class="content-box">
+                                    <div class="icon-title">
+                                         <span class="ot-flaticon-cube"></span>
+                                         <h5>قيمنا</h5>
+                                    </div>
+                                    <img src="./images/imgi_14_support3.png" class="attachment-full size-full lazyloaded" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
                     <div class="row">
                         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mb-4 mb-xl-0">
                             <div class="ot-counter">
                                 <div>
                                     <span>[</span>
-                                    <span class="num" data-to="180" data-time="2000">180</span>
+                                    <span class="num" data-to="180" data-time="2000">15</span>
                                     <span>+]</span>
                                 </div>
-                                <h6>Current Clients</h6>                            
+                                <h6 style="font-family: 'TheSansArabic', sans-serif !important; text-align: right;">مشروع</h6>                            
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mb-4 mb-xl-0">
                             <div class="ot-counter">
                                 <div>
                                     <span>[</span>
-                                    <span class="num" data-to="10" data-time="2000">10</span>
+                                    <span class="num" data-to="10" data-time="2000">500</span>
                                     <span>+]</span>
                                 </div>
-                                <h6>years of experience</h6>                            
+                                <h6 style="font-family: 'TheSansArabic', sans-serif !important; text-align: right;">وحدة سكنية</h6>                            
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mb-4 mb-sm-0">
                             <div class="ot-counter">
                                 <div>
                                     <span>[</span>
-                                    <span class="num" data-to="35" data-time="2000">35</span>
+                                    <span class="num" data-to="35" data-time="2000">200</span>
                                     <span>+]</span>
                                 </div>
-                                <h6>awards winning</h6>                             
+                                <h6 style="font-family: 'TheSansArabic', sans-serif !important; text-align: right;">عميل</h6>                             
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                             <div class="ot-counter">
                                 <div>
                                     <span>[</span>
-                                    <span class="num" data-to="5" data-time="2000">5</span>
+                                    <span class="num" data-to="5" data-time="2000">10</span>
                                     <span>+]</span>
                                 </div>
-                                <h6>Offices Worldwide</h6>                              
+                                <h6 style="font-family: 'TheSansArabic', sans-serif !important; text-align: right;">سنوات من الخبرة</h6>                              
                             </div>
                         </div>
                     </div>
@@ -1054,7 +1258,7 @@ body, nav a, .navbar a, ul li a {
                 <div class="projects-grid pf_4_cols style-2 p-info-s2 img-scale w-auto no-gaps mx-0">
                     <div class="grid-sizer"></div>
                     <div class="project-item category-19 thumb2x">
-                        <div class="projects-box">
+                        <!-- <div class="projects-box">
                             <div class="projects-thumbnail">
                                 <a href="portfolio-standar.html">
                                     <img src="./images/project1.jpg" alt="">
@@ -1071,13 +1275,13 @@ body, nav a, .navbar a, ul li a {
                                 </div>
                                 <a class="overlay" href="portfolio-standar.html"></a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="project-item category-14 ">
                         <div class="projects-box">
                             <div class="projects-thumbnail">
                                 <a href="portfolio-detail-slider.html">
-                                    <img src="./images/project2.jpg" alt="">
+                                    <img src="./images/rr.jpg" alt="">
                                 </a>
                                 <div class="overlay">
                                     <h5>Minimal Guests House</h5>
@@ -1086,10 +1290,10 @@ body, nav a, .navbar a, ul li a {
                             </div>
                             <div class="portfolio-info">
                                 <div class="portfolio-info-inner">
-                                    <h5><a class="title-link" href="portfolio-detail-slider.html">Minimal Guests House</a></h5>
+                                    <h5><a class="title-link" href="portfolio-detail-slider.html">رجينسي ريزيدينس</a></h5>
                                     <p class="portfolio-cates">
-                                        <a href="#">Decor</a>
-                                        <a href="#">Interior</a>
+                                        <!-- <a href="#">Decor</a>
+                                        <a href="#">Interior</a> -->
                                     </p>
                                 </div>
                                 <a class="overlay" href="portfolio-detail-slider.html"></a>
@@ -1100,7 +1304,7 @@ body, nav a, .navbar a, ul li a {
                         <div class="projects-box">
                             <div class="projects-thumbnail">
                                 <a href="portfolio-left.html">
-                                    <img src="./images/project3.jpg" alt="">
+                                    <img src="./images/pl.jpg" alt="">
                                 </a>
                                 <div class="overlay">
                                     <h5>Art Family Residence</h5>
@@ -1109,8 +1313,8 @@ body, nav a, .navbar a, ul li a {
                             </div>
                             <div class="portfolio-info">
                                 <div class="portfolio-info-inner">
-                                    <h5><a class="title-link" href="portfolio-left.html">Art Family Residence</a></h5>
-                                    <p class="portfolio-cates"><a href="#">Architecture</a></p> 
+                                    <h5><a class="title-link" href="portfolio-left.html">برستيج ليفيلز</a></h5>
+                                    <!-- <p class="portfolio-cates"><a href="#">Architecture</a></p>  -->
                                 </div>
                                 <a class="overlay" href="portfolio-left.html"></a>
                             </div>
@@ -1120,17 +1324,17 @@ body, nav a, .navbar a, ul li a {
                         <div class="projects-box">
                             <div class="projects-thumbnail">
                                 <a href="portfolio-right.html">
-                                    <img src="./images/project4.jpg" alt="">
+                                    <img src="./images/nsmat.jpg" alt="">
                                 </a>
                                 <div class="overlay">
-                                    <h5>Private House in Spain</h5>
+                                    <h5>نسمات اسكوير</h5>
                                     <i class="ot-flaticon-add"></i>
                                 </div>
                             </div>
                             <div class="portfolio-info">
                                 <div class="portfolio-info-inner">
-                                    <h5><a class="title-link" href="portfolio-right.html">Private House in Spain</a></h5>
-                                    <p class="portfolio-cates"><a href="#">Furniture</a></p> 
+                                    <h5><a class="title-link" href="portfolio-right.html">نسمات اسكوير</a></h5>
+                                    <!-- <p class="portfolio-cates"><a href="#">Furniture</a></p>  -->
                                 </div>
                                 <a class="overlay" href="portfolio-right.html"></a>
                             </div>
@@ -1140,17 +1344,17 @@ body, nav a, .navbar a, ul li a {
                         <div class="projects-box">
                             <div class="projects-thumbnail">
                                 <a href="portfolio-small.html">
-                                    <img src="./images/project5.jpg" alt="">
+                                    <img src="./images/aura.jpg" alt="">
                                 </a>
                                 <div class="overlay">
-                                    <h5>Modern Villa in Belgium</h5>
+                                    <h5>فلل اورا</h5>
                                     <i class="ot-flaticon-add"></i>
                                 </div>
                             </div>
                             <div class="portfolio-info">
                                 <div class="portfolio-info-inner">
-                                    <h5><a class="title-link" href="portfolio-small.html">Modern Villa in Belgium</a></h5>
-                                    <p class="portfolio-cates"><a href="#">Furniture</a></p> 
+                                    <h5><a class="title-link" href="portfolio-small.html">فلل اورا</a></h5>
+                                    <!-- <p class="portfolio-cates"><a href="#">Furniture</a></p>  -->
                                 </div>
                                 <a class="overlay" href="portfolio-small.html"></a>
                             </div>
@@ -1182,13 +1386,13 @@ body, nav a, .navbar a, ul li a {
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 mb-4 mb-lg-0">
-                            <h2 class="text-light mb-0" style="direction: rtl;">يمكنك استخدام هذا النوع من النصوص عند الحاجة إلى نصوص طويلة !</h2>
+                            <h4  style="font-family: 'TheSansArabic', sans-serif !important; text-align: right;" class="text-light mb-0" style="direction: rtl;">ابدأ رحلتك معنا اليوم.</h4>
                             <div class="space-5"></div>
-                            <p class=" mb-0" style="direction: rtl;">يمكنك استخدام هذا النوع من النصوص عند الحاجة إلى نصوص طويلة دون الحاجة إلى التركيز على المعنى،</p>
+                            <p  style="font-family: 'TheSansArabic', sans-serif !important; text-align: right;" class=" mb-0" style="direction: rtl;">فريق وجاد العقارية مستعد للإجابة عن استفساراتكم وتقديم الدعم العقاري الذي يليق بتطلعاتكم.</p>
                         </div>
                         <div class="col-lg-4 text-left text-lg-right align-self-center">
                             <div class="ot-button">
-                                <a href="contact.html" class="octf-btn octf-btn-light border-hover-light">get in touch</a>
+                                <a  style="font-family: 'TheSansArabic', sans-serif !important;  " href="contact.html" class="octf-btn octf-btn-light border-hover-light">تواصل معنا الان</a>
                             </div>
                         </div>
                     </div>
@@ -1200,7 +1404,7 @@ body, nav a, .navbar a, ul li a {
                     <span class="g-line-vertical line-center color-line-default"></span>
                     <span class="g-line-vertical line-right color-line-default"></span>
                 </div>
-                <div class="container">
+                <!-- <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-12 align-self-center">
                             <div class="skill-content-1 mr-xl-70">
@@ -1240,15 +1444,15 @@ body, nav a, .navbar a, ul li a {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </section>
             <section id="process" class="process-step" style="background-color: #446784;">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 text-center theratio-align-center">
                             <div class="ot-heading is-dots">
-                                <span>[ working steps ]</span>
-                                <h2 class="main-heading">Our Working Process</h2>
+                                <span>نهجنا </span>
+                                <h2 class="main-heading">نحو عمران مستدام ومؤثر</h2>
                             </div>
                         </div>
                     </div>
@@ -1261,46 +1465,124 @@ body, nav a, .navbar a, ul li a {
                                             <span class="dcell"><i class="ot-flaticon-tip"></i></span>
                                             <span class="number-stroke">01</span>
                                         </div>
-                                        <h5>Creating a Concept</h5>
+                                        <h5>التطوير العقاري</h5>
                                     </li>
                                     <li>
                                         <div class="icon-main">
                                             <span class="dcell"><i class="ot-flaticon-money-back"></i></span>
                                             <span class="number-stroke">02</span>
                                         </div>
-                                        <h5>Budget Planning</h5>
+                                        <h5> التصميم المعماري</h5>
                                     </li>
                                     <li>
                                         <div class="icon-main">
                                             <span class="dcell"><i class="ot-flaticon-3d-1"></i></span>
                                             <span class="number-stroke">03</span>
                                         </div>
-                                        <h5>Design Process</h5>
+                                        <h5> إدارة المشاريع</h5>
                                     </li>
                                     <li>
                                         <div class="icon-main">
                                             <span class="dcell"><i class="ot-flaticon-paint-1"></i></span>
                                             <span class="number-stroke">04</span>
                                         </div>
-                                        <h5>Building Your Dream</h5>
+                                        <h5>التسويق العقاري</h5>
                                     </li>
                                 </ul>
                                 <div class="process-des">
-                                    <div class="process-des-item">Original design project of high quality raises profit – this is proved in practice by many of our customers. A professional approach will avoid of many common mistakes, minimize the cost of decoration materials and choose the best way to implement your ideas or direct your</div>
-                                    <div class="process-des-item">Original design project of high quality raises profit – this is proved in practice by many of our customers. A professional approach will avoid of many common mistakes, minimize the cost of decoration materials and choose the best way to implement your ideas or direct your</div>
-                                    <div class="process-des-item">Original design project of high quality raises profit – this is proved in practice by many of our customers. A professional approach will avoid of many common mistakes, minimize the cost of decoration materials and choose the best way to implement your ideas or direct your</div>
-                                    <div class="process-des-item">Original design project of high quality raises profit – this is proved in practice by many of our customers. A professional approach will avoid of many common mistakes, minimize the cost of decoration materials and choose the best way to implement your ideas or direct your</div>
+                                    <div  style="color:#fff;" class="process-des-item">نُخطط وننفذ مشاريع عمرانية متكاملة – سكنية وتجارية – تبدأ من الفكرة وتنتهي بالتسليم، مع التركيز على المواقع الاستراتيجية، والتصاميم العصرية، والقيمة الاستثمارية طويلة الأمد.</div>
+                                    <div  style="color:#fff;" class="process-des-item">نُقدّم تصاميم مبتكرة تُراعي الذوق السعودي، وتجمع بين الوظيفة والجمال، وفق أعلى معايير الجودة، والسلامة، والراحة</div>
+                                    <div  style="color:#fff;" class="process-des-item">نُشرف باحترافية على جميع مراحل التنفيذ، مع متابعة دقيقة للميزانيات والجداول الزمنية، لضمان إنجاز المشاريع بكفاءة وجودة عالية.</div>
+                                    <div  style="color:#fff;" class="process-des-item">نُطوّر استراتيجيات تسويقية مبنية على تحليل السوق وفهم الجمهور المستهدف، بما يضمن تعظيم العائد الاستثماري لكل مشروع.</div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-12 text-center pt-5">
                             <div class="ot-button">
-                                <a href="about-us.html" class="octf-btn octf-btn-light border-hover-light">view more</a>
+                                <!-- <a href="about-us.html" class="octf-btn octf-btn-light border-hover-light">view more</a> -->
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <div>
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 px-0">
+                            <div class="cate-lines h-light">
+                                <div class="cate-item">
+                                    <a href="#">                
+                                        <img src="./images/cate1.jpg" alt="">
+                                    </a>                
+                                    <div class="cate-item_content">
+                                        <a href="#"><h2 style="font-family: 'TheSansArabic', sans-serif !important; text-align:right;">فلل<span class="number-stroke">01</span></h2></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 px-0">
+                            <div class="cate-lines h-light">
+                                <div class="cate-item">
+                                    <a href="#">                
+                                        <img src="./images/cate2.jpg" alt="">
+                                    </a>                
+                                    <div class="cate-item_content">
+                                        <a href="#"><h2 style="font-family: 'TheSansArabic', sans-serif !important; text-align:right;">سكنى<span class="number-stroke">02</span></h2></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 px-0">
+                            <div class="cate-lines s-dark">
+                                <div class="cate-item">
+                                    <a href="#">                
+                                        <img src="./images/cate3.jpg" alt="">
+                                    </a>                
+                                    <div class="cate-item_content">
+                                        <a href="#"><h2 style="font-family: 'TheSansArabic', sans-serif !important; text-align:right;">فندقي<span class="number-stroke">03</span></h2></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          <div class="col-lg-4 col-md-6 px-0">
+                            <div class="cate-lines h-light">
+                                <div class="cate-item">
+                                    <a href="#">                
+                                        <img src="./images/cate1.jpg" alt="">
+                                    </a>                
+                                    <div class="cate-item_content">
+                                        <a href="#"><h2 style="font-family: 'TheSansArabic', sans-serif !important; text-align:right;">فندقي<span class="number-stroke">04</span></h2></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 px-0">
+                            <div class="cate-lines h-light">
+                                <div class="cate-item">
+                                    <a href="#">                
+                                        <img src="./images/cate2.jpg" alt="">
+                                    </a>                
+                                    <div class="cate-item_content">
+                                        <a href="#"><h2 style="font-family: 'TheSansArabic', sans-serif !important; text-align:right;">أراضي<span class="number-stroke">05</span></h2></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 px-0">
+                            <div class="cate-lines s-dark">
+                                <div class="cate-item">
+                                    <a href="#">                
+                                        <img src="./images/cate3.jpg" alt="">
+                                    </a>                
+                                    <div class="cate-item_content">
+                                        <a href="#"><h2 style="font-family: 'TheSansArabic', sans-serif !important; text-align:right;">لوجيستي<span class="number-stroke">06</span></h2></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <section>
                 <div class="grid-lines grid-lines-vertical">
                     <span class="g-line-vertical line-left color-line-default"></span>
