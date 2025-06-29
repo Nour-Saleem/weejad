@@ -4804,7 +4804,7 @@ object {
   display: -ms-flexbox;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  border-bottom: 3px solid #000;
+  border-bottom: 3px solid #7e7e7e;
 }
 .ot-process .process_nav li {
   position: relative;
@@ -4844,7 +4844,7 @@ object {
   width: 141px;
   height: 141px;
   line-height: 141px;
-  background: #000;
+  background: #7e7e7e;
   color: #fff;
   margin-bottom: 25px;
   -webkit-border-radius: 50%;
