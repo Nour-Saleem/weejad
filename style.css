@@ -1677,7 +1677,7 @@ padding: 8px 25px 8px 12px;}
   padding-left: 0;
 }
 
-.main-navigation ul > li.menu-item-has-children > a:after {
+/* .main-navigation ul > li.menu-item-has-children > a:after {
   position: absolute;
   right: 1px;
   top: 50%;
@@ -1688,13 +1688,13 @@ padding: 8px 25px 8px 12px;}
   line-height: 1;
   color: #c3c7c9;
   font-weight: 500;
-}
+} */
 
 .main-navigation ul > li.menu-item-has-children > a:hover:after {
   color: #fff;
 }
 
-.main-navigation ul > li li.menu-item-has-children > a:after {
+/* .main-navigation ul > li li.menu-item-has-children > a:after {
   position: absolute;
   content: "";
   font-family: Flaticon;
@@ -1709,7 +1709,7 @@ padding: 8px 25px 8px 12px;}
   -o-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transform: rotate(-90deg);
-}
+} */
 
 .main-navigation ul li ul {
   min-width: 290px;
@@ -1734,14 +1734,14 @@ padding: 8px 25px 8px 12px;}
   -moz-box-shadow: 3px 3px 15px 0 rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
-.main-navigation ul li ul:before {
+/* .main-navigation ul li ul:before {
   content: "";
   position: absolute;
   height: 10px;
   width: 100%;
   top: -10px;
   left: 0;
-}
+} */
 
 .main-navigation ul li ul ul {
   left: calc(100% + 2px);
@@ -2491,14 +2491,14 @@ padding: 8px 25px 8px 12px;}
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
+/* .site-header:before,
+.site-header:after, */
 .clear:before,
 .clear:after,
 .entry-content:before,
 .entry-content:after,
 .comment-content:before,
 .comment-content:after,
-.site-header:before,
-.site-header:after,
 .site-content:before,
 .site-content:after,
 .site-footer:before,
@@ -3716,14 +3716,17 @@ object {
   font-size: 14px;
   font-weight: 600;
   color: #9f9e9e;
-  display: inline-block;
-  margin-bottom: 6px;
+  margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  position: absolute;
+  right: 0;
+  left: 0;
 }
 .ot-heading h2 {
   margin-bottom: 0;
   line-height: 48px;
+  margin-top: 2rem;
 }
 .ot-heading.is-dots {
   padding-bottom: 30px;
@@ -4177,17 +4180,19 @@ object {
   font-size: 16px;
   overflow: hidden;
   color: #446784;
+  
 }
 .contact-info h6 {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 5px;
+  float: right;
 }
 .contact-info i {
   font-size: 26px;
   margin-top: 2px;
   line-height: 1;
-  float: left;
+  float: right;
   color: #446784;
 }
 .contact-info i:before {
@@ -4196,14 +4201,19 @@ object {
 .contact-info img {
   width: 30px;
   margin-top: 3px;
-  float: left;
+  float: right;
 }
 .contact-info p {
   margin-bottom: 0;
 }
 .contact-info .info-text {
-  padding-left: 50px;
+  /* padding-left: 50px; */
   font-weight: 300;
+  float: right;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 /*--------------------------------------------------------------
@@ -6180,6 +6190,7 @@ object {
 
 .wpcf7 .main-form .font14 {
   margin-bottom: 24px;
+  
 }
 .wpcf7 .main-form input,
 .wpcf7 .main-form textarea {
@@ -7270,7 +7281,7 @@ section {
   background-image: url('https://via.placeholder.com/1920x500.png');
 }
 .page-header-contact {
-  background-image: url('https://via.placeholder.com/1920x500.png');
+  background-image: url('./images/pheader-contact.jpg');
 }
 .pheader-service-detail1 {
   background-image: url('https://via.placeholder.com/1920x500.png');
