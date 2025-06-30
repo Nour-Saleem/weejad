@@ -2084,6 +2084,7 @@ padding: 8px 25px 8px 12px;}
   display: none;
 }
 
+
 @media only screen and (max-width: 1024px) {
   .octf-main-header,
 .header-desktop {
@@ -2099,6 +2100,7 @@ padding: 8px 25px 8px 12px;}
     -o-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+   
   }
   .header_mobile.open, .header_mobile.is-stuck {
     background: #446784;
@@ -6744,6 +6746,7 @@ div.elementor-widget-heading .elementor-heading-title {
 --------------------------------------------------------------*/
 .header-mobile {
   display: none;
+  
 }
 
 .header-mobile .is-stuck {

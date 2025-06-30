@@ -44,7 +44,7 @@
     }
 
     header {
-      text-align: center;
+      /* text-align: center; */
       margin-bottom: 2rem;
       /* background-color: #446784; */
     }
@@ -105,6 +105,30 @@ a{
 .img-item:hover .gray {
   opacity: 0;
 }
+#rev_slider_one{
+    /* background-color: red; */
+   
+}
+.clint-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @media(max-width:767px){
+        flex-direction: column;
+        justify-content: stretch;
+    }
+}
+#text-box{
+    @media(max-width:767px){
+        position:absolute;
+        top:0;
+        right:0;
+         background-color: red;
+         display: none;
+
+
+    }
+}
 
   </style>
 </head>
@@ -115,7 +139,7 @@ a{
     <div id="page" class="site">
         <header id="site-header" class="site-header header-transparent">
             <!-- Main Header start -->
-            <div class="octf-main-header is-fixed">
+            <div class="octf-main-header main-header-s3 is-fixed">
                 <div class="octf-area-wrap">
                     <div class="container-fluid octf-mainbar-container">
                         <div class="octf-mainbar">
@@ -245,7 +269,7 @@ a{
                                     </nav>
                                 </div>
                                 <div class="octf-col cta-col text-right no-padding">
-                                <!-- Call To Action -->
+                                    <!-- Call To Action -->
                                     <div class="octf-btn-cta">
 
                                         <!-- <div class="octf-cart octf-cta-header">
@@ -297,28 +321,29 @@ a{
                                             </div>
                                         </div> -->
 
-                                        <div class="octf-sidepanel octf-cta-header">
-                                            <div class="site-overlay panel-overlay"></div>
-                                            <div id="panel-btn" class="panel-btn octf-cta-icons">
-                                                <i class="ot-flaticon-menu"></i>
+                                            <div class="octf-sidepanel octf-cta-header">
+                                                <div class="site-overlay panel-overlay"></div>
+                                                <div id="panel-btn" class="panel-btn octf-cta-icons">
+                                                    <i class="ot-flaticon-menu"></i>
+                                                </div>
                                             </div>
+
                                         </div>
-                                        
-                                    </div>                              
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="header_mobile">
+            <div class="header_mobile header-mobile-s3" style="padding-left: 0.5rem;">
                 <div class="container-fluid">
                     <div class="octf-mainbar-row octf-row">
                         <div class="octf-col">
                             <div class="mlogo_wrapper clearfix">
                                 <div class="mobile_logo">
                                     <a href="index.html">
-                                        <img src="images/logo.svg" alt="Theratio">
+                                        <img src="images/شش.svg" alt="Theratio">
                                     </a>
                                 </div>
                             </div>
@@ -332,13 +357,13 @@ a{
                                 <div class="h-search-form-field collapse">
                                     <div class="h-search-form-inner">
                                         <form role="search" method="get" class="search-form">
-                                            <input type="search" class="search-field" placeholder="SEARCH..." value="" name="s">
+                                            <input type="search" class="search-field" placeholder="ابحث هنا..." value="" name="s">
                                             <button type="submit" class="search-submit"><i class="ot-flaticon-search"></i></button>
                                         </form>
                                     </div>                                  
                                 </div>
                             </div>
-                            <div class="octf-menu-mobile octf-cta-header">
+                            <div class="octf-menu-mobile octf-cta-header" style="text-align: right;">
                                 <div id="mmenu-toggle" class="mmenu-toggle">
                                     <button><i class="ot-flaticon-menu"></i></button>
                                 </div>
@@ -349,14 +374,14 @@ a{
                                         <div class="mobile-nav">
                                             <ul id="menu-main-menu" class="mobile_mainmenu none-style">
                                                 <li class="menu-item-has-children current-menu-item current-menu-ancestor">
-                                                    <a href="index.html">Home</a>
-                                                    <ul class="sub-menu">
-                                                        <li class="current-menu-item"><a href="index.html">Main Home</a></li>
+                                                    <a href="index.html">الرئيسية</a>
+                                                    <!-- <ul class="sub-menu">
+                                                        <li><a href="index.html">Main Home</a></li>
                                                         <li><a href="index-dark.html">Main Dark</a></li>
                                                         <li><a href="index-2.html">Interior Design</a></li>
                                                         <li><a href="index-2-light.html">Interior Design Light</a></li>
                                                         <li><a href="index-3.html">Studio Home</a></li>
-                                                        <li><a href="index-3-dark.html">Studio Home Dark</a></li>
+                                                        <li class="current-menu-item"><a href="index-3-dark.html">Studio Home Dark</a></li>
                                                         <li><a href="index-4.html">Architecture Agency</a></li>
                                                         <li><a href="index-4-dark.html">Architecture Agency Dark</a></li>
                                                         <li><a href="index-5.html">Design Company</a></li>
@@ -368,10 +393,10 @@ a{
                                                         <li><a href="one-page-dark.html">Home One Page Dark</a></li>
                                                         <li><a href="index-sidenav.html">Home with Side Menu</a></li>
                                                         <li><a href="index-sidenav-light.html">Home with Side Menu Light</a></li>
-                                                    </ul>
+                                                    </ul> -->
                                                 </li>
-                                                <li class="menu-item-has-children"><a href="#">Pages</a>
-                                                    <ul class="sub-menu">
+                                                <li class="menu-item-has-children"><a href="about-us.html">من نحن</a>
+                                                    <!-- <ul class="sub-menu">
                                                         <li><a href="about-us.html">About Us</a></li>
                                                         <li><a href="our-services.html">Our Services</a></li>
                                                         <li><a href="our-team.html">Our Team</a></li>
@@ -390,20 +415,20 @@ a{
                                                         <li><a href="faq.html">FAQS</a></li>
                                                         <li><a href="cooming-soon.html">Coming Soon</a></li>
                                                         <li><a href="404-error.html">404 Error</a></li>
-                                                    </ul>
+                                                    </ul> -->
                                                 </li>
-                                                <li class="menu-item-has-children"><a href="#">Services</a>
-                                                    <ul class="sub-menu">
+                                                <li class="menu-item-has-children"><a href="portfolio-no-gap.html">المشاريع</a>
+                                                    <!-- <ul class="sub-menu">
                                                         <li><a href="servcies-detail-1.html">Design & Planning</a></li>
                                                         <li><a href="servcies-detail-2.html">Exterior Design</a></li>
                                                         <li><a href="servcies-detail-3.html">Custom Solutions</a></li>
                                                         <li><a href="servcies-detail-4.html">Furniture & Decor</a></li>
                                                         <li><a href="servcies-detail-5.html">Creating Concept</a></li>
-                                                        <li><a href="servcies-detail-6.html">Author's Control</a></li>
-                                                    </ul>
+                                                        <li><a href="servcies-detail-6.html">Author’s Control</a></li>
+                                                    </ul> -->
                                                 </li>
-                                                <li class="menu-item-has-children"><a href="#">Portfolio</a>
-                                                    <ul class="sub-menu">
+                                                <li class="menu-item-has-children"><a href="portfolio-two-column.html">التطوير العقاري</a>
+                                                    <!-- <ul class="sub-menu">
                                                         <li class="menu-item-has-children"><a href="#">Portfolio Types</a>
                                                             <ul class="sub-menu">
                                                                 <li><a href="portfolio-masonry.html">Portfolio Grid Masonry</a></li>
@@ -444,16 +469,16 @@ a{
                                                                 <li><a href="hidden-2.html">Hidden 2</a></li>
                                                             </ul>
                                                         </li>
-                                                    </ul>
+                                                    </ul> -->
                                                 </li>
-                                                <li class="menu-item-has-children"><a href="blog.html">Blog</a>
-                                                    <ul class="sub-menu">
+                                                <li class="menu-item-has-children"><a href="contact.html">تواصل معنا</a>
+                                                    <!-- <ul class="sub-menu">
                                                         <li><a href="blog.html">Blog Listing</a></li>
                                                         <li><a href="blog-grid.html">Blog Grid</a></li>
                                                         <li><a href="post.html">Blog Single</a></li>
-                                                    </ul>
+                                                    </ul> -->
                                                 </li>
-                                                <!-- <li><a href="contact.html">Contacts</a></li> -->
+                                                <li><a href="blog-grid.html">المدونة</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -464,6 +489,7 @@ a{
                 </div>
             </div>
         </header>
+        
 
         <div id="side-panel" class="side-panel">
             <a href="#" class="side-panel-close"><i class="ot-flaticon-close-1"></i></a>
@@ -566,12 +592,12 @@ a{
                 <div id="rev_slider_one_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="mask-showcase" data-source="gallery">
                     <!-- START REVOLUTION SLIDER 5.4.1 fullscreen mode -->
                     <div id="rev_slider_one" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.1">
-                        <ul style="position: absolute;left: 0;">
+                        <ul>
                         
                             <!-- SLIDE 1 -->
                             <li data-index="rs-70" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="images/WhatsApp Image 2025-04-20 at 17.29.55 (2).jpeg"  data-rotate="0"  data-saveperformance="off"  data-title="" data-param1="1" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
-                                 <div style="position: relative; display: inline-block;">
+                            <div style="position: relative; display: inline-block;">
                                   <img src="./images/GBA CAM2 NIGHT.jpg"
                                       style="display: block; width: 100%; height: auto;"
                                        alt=""
@@ -590,14 +616,7 @@ a{
                                         z-index: 1;"></div>
 
                                         <!-- الكلام اللي فوق الصورة -->
-                                       <div style="position: absolute;
-                                                   top: 50%; left: 50%;
-                                                    transform: translate(-50%, -50%);
-                                                      color: white;
-                                                      z-index: 2;
-                                                       font-size: 20px;">
-                                                     <!-- الكلام هنا -->
-                                         </div>
+                                      
                                     </div>
 
                                 <!-- <img src="images/GBA CAM2 NIGHT.jpg" data-bgcolor='rgba(255,255,255,0)' style='' alt=""  data-bgposition="center center" data-bgfit="cover" class="rev-slidebg" data-bgrepeat="no-repeat" data-bgparallax="off" data-no-retina> -->
@@ -605,46 +624,7 @@ a{
                                 <!-- LAYER 1  right image overlay dark-->
 
                                                             
-                                <!-- LAYER 3  Thin text title-->
-                                <div class="tp-caption tp-resizeme tp-caption-big" 
-                                    id="slide-70-layer-1" 
-                                    data-x="['center','center','center','center']" data-hoffset="['56','46','34','0']" 
-                                    data-y="['center','center','center','center']" data-voffset="['-64','-72','-65','-50']" 
-                                    data-fontsize="['206',150','0','0']"
-                                    data-lineheight="['206','170','127','80']"
-                                    data-letterspacing="['104','85','63','39']"
-                                    data-fontweight="['900','900','900','900']"
-                                    data-color="['transparent','transparent','transparent','transparent']"
-                                    data-whitespace="nowrap"
-                                    data-type="text" 
-                                    data-responsive_offset="on" 
-                                    data-frames='[{"delay":500,"split":"chars","splitdelay":0.1,"speed":500,"frame":"0","from":"x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"power4.inOut"},{"delay":"wait","speed":1000,"frame":"999","to":"x:50px;z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;","ease":"power3.inOut"}]'
-                                    data-textAlign="['center','center','center','center']"
-                
-                                    >
-                                </div>
-                                       
-                                <!-- LAYER 4  Bold Title-->
-                                <div dir="rtl" class="tp-caption tp-resizeme tp-caption-main" 
-                                    id="slide-70-layer-2" 
-                                    data-x="['center','center','center','center']" data-hoffset="['2','0','0','0']" 
-                                    data-y="['center','center','center','center']" data-voffset="['-56','-63','-60','-65']"
-                                    data-fontsize="['93','72','55','40']"
-                                    data-lineheight="['83','70','51','55']"
-                                    data-color="['#fff','#fff','#fff','#fff']"
-                                    data-fontweight="['200','200','200','200']"
-                                    data-whitespace="nowrap"
-                         
-                                    data-type="text" 
-                                    data-responsive_offset="on" 
-                                    
-                                    data-frames='[{"delay":900,"speed":1000,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":1000,"frame":"999","to":"x:50px;opacity:0;","ease":"power3.inOut"}]'
-
-                                    data-textAlign="['left','left','left','left']"
-                
-                                    >
-                                    <!-- New Level of Interior  -->
-                                </div>
+                                
                                                                     
                                 <!-- LAYER 5  Paragraph-->
                           <!-- <div class="tp-caption tp-resizeme tp-desc"
@@ -687,8 +667,8 @@ a{
 
         
                                 <!-- LAYER 6  Read More-->
-                                <div class="tp-caption rev-btn" 
-                                    id="slide-70-layer-4" 
+                                 <div class="tp-caption rev-btn" 
+                                    id="text-box" 
                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"  
                                     data-y="['center','center','center','center']" data-voffset="['170','140','119','110']"
                                     data-fontsize="['13','18','17','0']"
@@ -709,7 +689,7 @@ a{
                                     >
                                     <h1 style="color: #fff; padding-bottom:40px;">نسمات اسكوير</h1>
                                     <a href="portfolio-masonry.html" class="octf-btn octf-btn-primary btn-slider btn-large">View Projects</a>
-                                </div>  
+                                </div>   
                        
                             </li>  
                                          
@@ -736,18 +716,16 @@ a{
                                            z-index: 1;"></div>
 
   <!-- الكلام اللي فوق الصورة -->
-  <div style="position: absolute;
+  <!-- <div style="position: absolute;
               top: 50%; left: 50%;
               transform: translate(-50%, -50%);
               color: white;
               z-index: 2;
               font-size: 20px;">
-   </div>
+   </div> -->
 </div>
 
-                                  <div>
-                                    <h1></h1>
-                                  </div>
+                                 
                                                             
                                 <!-- LAYER 3  Thin text title-->
                                <!-- <div class="tp-caption tp-resizeme tp-caption-big" 
@@ -836,7 +814,7 @@ a{
         
                                 <!-- LAYER 6  Read More-->
                                 <div class="tp-caption rev-btn" 
-                                    id="slide-71-layer-4" 
+                                    id="text-box" 
                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"  
                                     data-y="['center','center','center','center']" data-voffset="['170','140','119','110']"
                                     data-fontsize="['13','18','17','0']"
@@ -857,7 +835,7 @@ a{
                                     >
                                     <h1 style="color: #fff; padding-bottom:40px;">بريستيج ليفلز</h1>
                                     <a href="portfolio-masonry.html" class="octf-btn octf-btn-primary btn-slider btn-large">View Projects</a>
-                                </div>  
+                                </div>   
                             </li>  
 
                             <!-- SLIDE 1 -->
@@ -882,14 +860,7 @@ a{
               z-index: 1;"></div>
 
   <!-- الكلام اللي فوق الصورة -->
-  <div style="position: absolute;
-              top: 50%; left: 50%;
-              transform: translate(-50%, -50%);
-              color: white;
-              z-index: 2;
-              font-size: 20px;">
-    <!-- الكلام هنا -->
-  </div>
+
 </div>
 
                                 <!-- <img src="./images/GARDENIA 3 NIGHT edit 0.jpg" data-bgcolor='#ffffff' style='' alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="off" data-no-retina> -->
@@ -918,7 +889,7 @@ a{
                                 </div> -->
                                        
                                 <!-- LAYER 4  Bold Title-->
-                                <div class="tp-caption tp-resizeme tp-caption-main" 
+                                <!-- <div class="tp-caption tp-resizeme tp-caption-main" 
                                     id="slide-72-layer-2" 
                                     data-x="['center','center','center','center']" data-hoffset="['2','0','0','0']" 
                                     data-y="['center','center','center','center']" data-voffset="['-56','-63','-60','-65']"
@@ -936,7 +907,7 @@ a{
                                     data-textAlign="['left','left','left','left']"
                 
                                     >
-                                </div>
+                                </div> -->
                                                                     
                                 <!-- LAYER 5  Paragraph-->
                                 <!-- <div class="tp-caption tp-resizeme tp-desc" 
@@ -961,8 +932,8 @@ a{
                                     </div>  -->
         
                                 <!-- LAYER 6  Read More-->
-                                <div class="tp-caption rev-btn" 
-                                    id="slide-72-layer-4" 
+                                 <div class="tp-caption rev-btn" 
+                                    id="text-box" 
                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"  
                                     data-y="['center','center','center','center']" data-voffset="['170','140','119','110']"
                                     data-fontsize="['13','18','17','0']"
@@ -983,7 +954,7 @@ a{
                                     >
                                     <h1 style="color: #fff; padding-bottom:40px;">ريجينسي ريزيدنس</h1>
                                     <a href="portfolio-masonry.html" class="octf-btn octf-btn-primary btn-slider btn-large">View Projects</a>
-                                </div>  
+                                </div>   
                             </li>  
                                                     
                   
@@ -1040,7 +1011,7 @@ a{
                                 </div>
                                 <p style="font-family: 'TheSansArabic', sans-serif !important; text-align: right;">في وجاد العقارية، نؤمن بأن التطوير العمراني ليس مجرد بناء مبانٍ، بل هو بناء لحياة متكاملة، تبدأ بفهم الإنسان وتنتهي بابتكار بيئة تعبّر عن هويته وتواكب طموحه.منذ انطلاقتنا، التزمنا بأن نكون جزءًا فاعلًا في مسيرة التحوّل العمراني التي تشهدها المملكة، عبر مشاريع تُثري جودة الحياة، وتترك أثرًا مستدامًا في قلب كل مدينة وكل مجتمع.</p>
                                 <!-- <p>نصوص تجريبية وأمثلة نصية باللغة العربية تُستخدم عادةً لأغراض التصميم والنشر. هذا النص ليس له معنى، بل هو مجرد نص وصفي يتم استخدامه لملء المساحات في التصميم. يمكنك استخدام هذا النوع من النصوص عند الحاجة إلى نصوص طويلة دون الحاجة إلى التركيز على المعنى، وذلك لتقد </p> -->
-                              <div class="ot-button" style="text-align: right;">
+                              <div class="ot-button" style="text-align: right; margin-bottom: 1rem;">
     <a style="font-family: 'TheSansArabic', sans-serif !important; " href="portfolio-masonry.html" class="octf-btn octf-btn-dark">  معرفة المزيد</a>
 </div>
 
@@ -1059,21 +1030,28 @@ a{
                 <div class="container-fluid">
                     <div class="row" >
                         <div class="col-lg-12">
-                            <div class="" style="display: flex;justify-content: space-between;">
+                            <div class="clint-box" style="">
                                 <!-- <div class="img-item">
                                     <figure><img src="./images/وجاد.png" alt=""></figure>
                                 </div> -->
                                <div class="img-item">
-  <figure>
-    <img class="gray" src="./images/منصور قابضه رمادي.png" alt="">
-    <img class="color" src="./images/منصور قابضه.png" alt="">
-  </figure>
-</div>
+                                  <figure>
+                                   <img class="gray" src="./images/منصور قابضه رمادي.png" alt="">
+                                   <img class="color" src="./images/منصور قابضه.png" alt="">
+                                   </figure>
+                                </div>
 
 <div class="img-item">
   <figure>
     <img class="gray" src="./images/شركة الاسكان رمادي.png" alt="">
     <img class="color" src="./images/شركه اسكان.png" alt="">
+  </figure>
+</div>
+
+<div class="img-item">
+  <figure>
+    <img class="gray" src="./images/Rozon Logo 1.svg" alt="" style="width: 6rem;">
+    <img class="color" src="./images/Rozon Logo(5).png" alt="">
   </figure>
 </div>
 
