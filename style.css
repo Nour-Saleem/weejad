@@ -4813,6 +4813,12 @@ object {
   margin-right: 70px;
   cursor: pointer;
 }
+.footer-list-item .list-item-icon i {
+    font-size: 1.1rem;
+    color: #F2F2F2;
+    line-height: 1;
+}
+
 /* .ot-process .process_nav li:last-child {
   margin-right: 0;
 } */
