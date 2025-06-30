@@ -3734,9 +3734,8 @@ object {
 .ot-heading.is-dots:before {
   content: "";
   position: absolute;
-  right: 0;
   bottom: 1px;
-  width: 66px;
+  width: 80px;
   height: 2px;
   border-bottom: 2px dotted #446784;
 }
@@ -4804,7 +4803,7 @@ object {
   display: -ms-flexbox;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  border-bottom: 3px solid #7e7e7e;
+  border-bottom: 3px solid #b3b1b1;
 }
 .ot-process .process_nav li {
   position: relative;
@@ -4844,7 +4843,7 @@ object {
   width: 141px;
   height: 141px;
   line-height: 141px;
-  background: #7e7e7e;
+  background: #b3b1b1;
   color: #fff;
   margin-bottom: 25px;
   -webkit-border-radius: 50%;
@@ -10256,6 +10255,10 @@ ul.style-default li:last-child, ol.style-default li:last-child {
     margin-top: 20px;
     margin-bottom: 40px;
     line-height: 1;
+}
+.footer-list-item{
+display: flex;
+align-items: center;
 }
 .footer-list-item i:before {
     font-size: 18px;
