@@ -130,6 +130,41 @@ a{
     }
 }
 
+@media (max-width: 767px) {
+  #rev_slider_one,
+  #rev_slider_one_wrapper,
+  .rev_slider_wrapper,
+  .fullscreen-container,
+  #rev_slider_one ul,
+  #rev_slider_one li,
+  .rev_slider,
+  .rev_slider.fullscreenbanner {
+    height: 100vh !important;
+    min-height: 100vh !important;
+    max-height: 100vh !important;
+    overflow: hidden !important;
+  }
+  .rev-slidebg {
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: 100vw !important;
+    max-height: 100vh !important;
+    object-fit: cover !important;
+    display: block;
+  }
+  .tp-bullets,
+  .tp-leftarrow,
+  .tp-rightarrow {
+    display: none !important;
+  }
+  #text-box {
+    display: none !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
   </style>
 </head>
 </head>
@@ -424,7 +459,7 @@ a{
                                                         <li><a href="servcies-detail-3.html">Custom Solutions</a></li>
                                                         <li><a href="servcies-detail-4.html">Furniture & Decor</a></li>
                                                         <li><a href="servcies-detail-5.html">Creating Concept</a></li>
-                                                        <li><a href="servcies-detail-6.html">Author’s Control</a></li>
+                                                        <li><a href="servcies-detail-6.html">Author's Control</a></li>
                                                     </ul> -->
                                                 </li>
                                                 <li class="menu-item-has-children"><a href="portfolio-two-column.html">التطوير العقاري</a>
@@ -978,7 +1013,7 @@ a{
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
                             <div class="story-text">
-                                <p style="font-family: 'TheSansArabic', sans-serif !important;">"في وجاد العقارية نؤمن بأن التطوير العقاري رسالة نهدف من خلالها لإحداث أثر حقيقي في حياة الناس، والمساهمة في بناء مدن سعودية عصرية تواكب رؤية المملكة وتلبي تطلعات المجتمع."</p>
+                                <p style="font-family: 'TheSansArabic', sans-serif !important;">"في وجاد العقارية نؤمن بأن التطوير العقاري رسالة نهدف من خلالها لإحداث أثر حقيقي في حياة الناس، والمساهمة في بناء مدن سعودية عصرية تواكب رؤية المملكة وتلبي تطلعات المجتمع."</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12">
@@ -2134,5 +2169,23 @@ a{
             });
         })(jQuery);
     </script>  
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+  if (window.innerWidth <= 767) {
+    var slider = document.getElementById('rev_slider_one');
+    if (slider) {
+      slider.style.height = '100vh';
+      slider.style.minHeight = '100vh';
+      slider.style.maxHeight = '100vh';
+    }
+    var wrapper = document.getElementById('rev_slider_one_wrapper');
+    if (wrapper) {
+      wrapper.style.height = '100vh';
+      wrapper.style.minHeight = '100vh';
+      wrapper.style.maxHeight = '100vh';
+    }
+  }
+});
+</script>
 </body>
 </html>
