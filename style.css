@@ -9551,7 +9551,7 @@ ul.style-default li:last-child, ol.style-default li:last-child {
   }
   .our-portfolio {
       padding-top: 80px;
-      background-image: url('./images/GBA\ CAM2\ NIGHT.jpg');
+      /* background-image: url('./images/GBA\ CAM2\ NIGHT.jpg'); */
       background-repeat: no-repeat;
       background-position: center;
   }
